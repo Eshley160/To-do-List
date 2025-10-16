@@ -1,38 +1,80 @@
-.App {
+.app-container {
+  width: 400px;
+  margin: 40px auto;
   text-align: center;
+  font-family: Georgia, serif;
+  background-color: aliceblue;
+  padding: 25px 25px;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: url('to-do-list.png');
+  background-size:cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color: #72CCE6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-form {
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  margin: 5px;
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  margin: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: #add3ff; 
 }
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  border: 2px solid;
+  border-color: #72CCE6;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+td{
+  color: black;
+  background-color: antiquewhite;
+}
+
+.completed td {
+  text-decoration: line-through;
+  color: #add3ff; 
+  opacity: 0.7;
+}
+
+.button{
+  border-spacing: 0;
+  border-radius: 15px;
+  box-shadow: black;
+  border:#999;
+  font-size: 15px;
+  padding: 7px;
+  font-family: Georgia, serif;
+}
+
+.button:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
